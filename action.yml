@@ -1,11 +1,14 @@
 
 name: 'Pull request updater'
 description: 'Update pr title and body'
-author: 'randilfernando<randil.fernando@outlook.com>'
+author: 'Kyle Einecker<kyleeincker@gmail.com>'
 runs:
   using: 'node12'
   main: 'dist/index.js'
 inputs:
+  token:
+    description: 'Token'
+    required: true
   title:
     description: 'PR title'
     required: false
